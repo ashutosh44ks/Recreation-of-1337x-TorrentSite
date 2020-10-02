@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
+header > .navbar{
+  height: 40px;
+  border-bottom: 5px solid #d63600;
+  background: black;
+  font-family: 'Oswald', sans-serif;
+}
+header > nav > div > ul > li > .nav-link{
+  right: 6px;
+  position: relative;
+}
+header > nav > div > ul > li > .nav-link:hover{
+  color: #d63600 !important;
+}
+header > nav > div > ul > li > .nav-link.active{
+  color: #d63600 !important;
+}
+
+
+.bg-image{
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url('../media/bg-image.jpg');
+}
+.bg-image2{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 700px;
+  background-image: url('../media/bg-image2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 100%;
+}
+
+
+.logo{
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 150px;
+  font-weight: bold;
+  transform: scale(0.8, 1);
+  font-weight: 400;
+  letter-spacing: -2px;
+  padding: 15px 0px;
+  text-decoration: none;
+}
+.logo:hover{
+  color: white;
+}
+.colorX{
+  color: #d63600;
+  font-weight: 900;
+  opacity: 0.7;
+}
+
+
+.card{
+  border: none;
+  color: white;
+  opacity: 0.7;
+}
+.card-header{
+  background: #d63600;
+  border: 1px solid orange;
+}
+.strong{
+  font-family: 'Oswald', sans-serif;
+}
+.card-body a{
+  color: #d63600;
+  text-decoration: none;
+}
+.card-body a:hover{
+  text-decoration: underline;
+}
+
+
+.menu{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+i.fas {
+  display: inline-block;
+  background: #d63600;
+  border: 1px solid orange;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+  color: white;
+  margin-bottom: 10px;
+}
+.menu a{
+  color: #d63600;
+  text-decoration: none;
+}
+.menu a:hover{
+  text-decoration: underline;
+}
+
+
+footer{
+  background-color: black;
+  border-top: 1px solid #d63600;
+}
+.page-top{
+  position: relative;
+  bottom: 15px;
+  opacity: 0.9;
+}
+.input-group{
+  width: 40%;
+}
+i.fab{
+  display: inline-block;
+  background: gold;
+  border: 1px solid yellow;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.6em 0.6em;
+  border-radius: 50% !important;
+  position: relative;
+  left: 37px;
+  z-index: 1;
+}
+.input{
+  border: 1px solid grey;
+  border-radius: 20px !important;
+  padding-left: 44px !important;
+  width: fit-content;
+}
