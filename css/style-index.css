@@ -1,20 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 
+.side-menu{
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  padding-left: 0px;
+  z-index: 1;
+  position: fixed;
+  top: 110px;
+  left: -10px;
+  min-width: 55px;
+}
+nav > ul > a{
+  font-size: 20px;
+}
+nav > ul{
+  width: 5%;
+}
+nav > ul > a:hover{
+  position: relative;
+  left: 10px;
+}
+
+
 header > .navbar{
   height: 40px;
   border-bottom: 5px solid #d63600;
   background: black;
   font-family: 'Oswald', sans-serif;
 }
-header > nav > div > ul > li > .nav-link{
+header > nav > div > div > ul > li > .nav-link{
   right: 6px;
   position: relative;
 }
-header > nav > div > ul > li > .nav-link:hover{
+header > nav > div > div > ul > li > .nav-link:hover{
   color: #d63600 !important;
 }
-header > nav > div > ul > li > .nav-link.active{
+header > nav > div > div > ul > li > .nav-link.active{
   color: #d63600 !important;
 }
 
@@ -23,6 +46,7 @@ header > nav > div > ul > li > .nav-link.active{
   position: relative;
   width: 100%;
   height: 700px;
+  overflow: auto;
   background-image: url('../media/bg-image.jpg');
 }
 .bg-image2{
@@ -85,7 +109,7 @@ header > nav > div > ul > li > .nav-link.active{
   margin-top: 50px;
   margin-bottom: 20px;
 }
-i.fas {
+.menu-icons > a > i.fas, .page-top >a > i.fas{
   display: inline-block;
   background: #d63600;
   border: 1px solid orange;
@@ -116,7 +140,7 @@ footer{
 .input-group{
   width: 40%;
 }
-i.fab{
+.input-group > i.fab{
   display: inline-block;
   background: gold;
   border: 1px solid yellow;
@@ -132,4 +156,5 @@ i.fab{
   border-radius: 20px !important;
   padding-left: 44px !important;
   width: fit-content;
+  pointer-events: none;
 }
