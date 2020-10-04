@@ -42,7 +42,7 @@ header > nav > div > div > ul > li > .nav-link.active{
 .bg-image{
   position: relative;
   width: 100%;
-  height: 1200px;
+  height: 1450px;
   overflow: auto;
   background-image: url('../media/bg-image.jpg');
 }
@@ -51,7 +51,7 @@ header > nav > div > div > ul > li > .nav-link.active{
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 1200px;
+  height: 1450px;
   background-image: url('../media/bg-image2.png');
   background-position: center;
   background-position: top;
@@ -123,15 +123,10 @@ header > nav > div > div > ul > li > .nav-link.active{
 }
 
 
-.alert{
-  margin-bottom: 0rem;
-}
-
-
 .card{
   border: none;
 }
-.card-header{
+.col-2 > .row > .card > .card-header{
   background: #d63600;
   border: 1px solid orange;
 }
@@ -142,7 +137,49 @@ header > nav > div > div > ul > li > .nav-link.active{
 .card-body a:hover{
   color: #d63600;
 }
-
+.Tdetails{
+  margin-top: 3%;
+  padding-left: 0px;
+}
+.Tdwnld{
+  margin-bottom: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  position: relative;
+  left: -74px;
+}
+.btn-dwnld{
+  width: 140%;
+}
+.nav-pills::after{
+  height: 5.4px;
+  width: 100%;
+  content: "";
+  opacity: 0.5;
+  position: static;
+  display: block;
+  background: grey;
+  z-index: 1;
+  bottom: 84.2px;
+}
+.nav-pills > li > .nav-link{
+  color: black;
+}
+.nav-pills > li > .nav-link.active{
+  background-color: grey !important;
+  color: white;
+}
+.nav-pills > li > .nav-link:hover{
+  background-color: #3C3C434D;
+}
+.file-image{
+  position: relative;
+  background-image: url('https://picsum.photos/200/300');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 300px;
+}
 
 footer{
   background-color: black;
