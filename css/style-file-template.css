@@ -126,7 +126,7 @@ header > nav > div > div > ul > li > .nav-link.active{
 .card{
   border: none;
 }
-.col-2 > .row > .card > .card-header{
+.col-md-2.col-sm-12 > .row > .card > .card-header{
   background: #d63600;
   border: 1px solid orange;
 }
@@ -143,7 +143,7 @@ header > nav > div > div > ul > li > .nav-link.active{
 }
 .Tdwnld{
   margin-bottom: 0;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-bottom: 5%;
   position: relative;
   left: -74px;
