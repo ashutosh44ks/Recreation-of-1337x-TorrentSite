@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@media only screen and (max-width:600px) {
+  .input-group{
+    left: 1vw !important;
+  }
+  .main{
+    margin-top: 4% !important;
+  }
+}
+
 .bg-theme{
   background: #d63600;
 }
