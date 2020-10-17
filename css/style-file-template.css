@@ -215,3 +215,6 @@ footer{
   color: white;
   margin-bottom: 10px;
 }
+footer > .navbar{
+  font-family: 'Oswald', sans-serif;
+}

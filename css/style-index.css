@@ -188,3 +188,6 @@ footer{
   width: fit-content;
   pointer-events: none;
 }
+footer > .navbar{
+  font-family: 'Oswald', sans-serif;
+}
