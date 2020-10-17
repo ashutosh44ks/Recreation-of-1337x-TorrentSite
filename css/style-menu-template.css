@@ -96,6 +96,9 @@ header > nav > div > div > ul > li > .nav-link.active{
   background: black;
   width: 250px !important;
 }
+.input-search:focus{
+  background: black !important;
+}
 .btn-search{
   border: 1px solid orange;
 }
