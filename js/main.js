@@ -177,10 +177,10 @@ menuList.forEach(item => {
               <i class="fas fa-file-export mr-2"></i><a href="file-template.html">${item.name} #${Math.floor(6*Math.random()+1)}</a>
             </td>
             <td class="px-2 text-center">${item.se}</td>
-            <td class="px-2 text-center">${item.le}</td>
-            <td class="px-2 text-center">${item.time}</td>
+            <td class="px-2 text-center thidden">${item.le}</td>
+            <td class="px-2 text-center thidden">${item.time}</td>
             <td class="px-2 text-center">${item.size}</td>
-            <td class="px-2 text-center">${item.uploader}</td>
+            <td class="px-2 text-center thidden">${item.uploader}</td>
           </tr>`;
 });
 //adding rows to HTML
