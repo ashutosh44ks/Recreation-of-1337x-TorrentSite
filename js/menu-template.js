@@ -172,7 +172,7 @@ let rows='';
 menuList.forEach(item => {
   rows+= `<tr>
             <td class="px-2">
-              <i class="fas fa-file-export mr-2"></i><a href="file-template.html">${item.name} #${Math.floor(6*Math.random()+1)}</a>
+              <i class="fas fa-file-export mr-2"></i><a class="name" href="file-template.html">${item.name} #${Math.floor(6*Math.random()+1)}</a>
             </td>
             <td class="px-2 text-center">${item.se}</td>
             <td class="px-2 text-center thidden">${item.le}</td>

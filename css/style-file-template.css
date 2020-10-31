@@ -9,6 +9,25 @@
   }
 }
 
+
+.spinner-border-parent{
+  z-index: 6000;
+  position: fixed;
+  background-color: rgba(0,0,0,0.7);
+  height: 100vh;
+  width: 100vw;
+}
+.spinner-border{
+  position: relative;
+  z-index: 600;
+  top: 50vh;
+  width: 4rem;
+  height: 4rem;
+  border: 0.55em solid #d63600;
+  border-right-color: transparent;
+}
+
+
 .bg-theme{
   background: #d63600;
 }
@@ -193,7 +212,7 @@ header > nav > div > div > ul > li > .nav-link.active{
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 300px;
+  min-height: 450px;
 }
 
 footer{

@@ -10,6 +10,11 @@
   </head>
   <body id="page-top">
 
+    <div class="d-flex justify-content-center spinner-border-parent d-none" id="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
 
     <header>
       <nav class="navbar navbar-expand-sm navbar-dark">
@@ -80,10 +85,10 @@
                   <div class="col-md-10 col-sm-12 mb-3">
                     <div class="row rounded">
                       <div class="card bg-light mb-3 p-0">
-                        <div class="card-header bg-gains text-theme strong">File1</div>
+                        <div class="card-header bg-gains text-theme strong" id="result-head">File1</div>
                         <div class="card-body">
                           <div class="container rounded text-white bg-dark">
-                            <div class="row">
+                            <div class="row" id="Tdetailsparent">
                               <div class="col-md-4 col-sm-12">
                                 <ul class="Tdetails">
                                   <li class="border-bottom border-secondary">Category <span class="float-right text-white-50"> Cate1</span></li>
@@ -141,13 +146,13 @@
                         </ul>
                         <div class="tab-content mb-5" id="pills-tabContent">
                           <div class="tab-pane show active px-3" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            <p class="text-center" id="description1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                             mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
                             qui officia deserunt mollit anim id est laborum.</p>
-                            <div class="file-image mt-4 mb-4"></div>
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            <div class="file-image mt-4 mb-4" id="description-pic"></div>
+                            <p class="text-center" id="description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                             mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -274,6 +279,8 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/file-template.js"></script>
   </body>
 </html>

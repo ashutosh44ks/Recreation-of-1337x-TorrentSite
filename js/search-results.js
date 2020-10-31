@@ -25,9 +25,10 @@ function getMedia(searchText){
     .then( (response)=>{
       let media= response.data.Search;
       let output="";
+      console.log(media);
       media.forEach(item => {
           output+=`<div class="col bg-dark m-1 text-center p-2 output">
-                      <a href="file-template.html">
+                      <a href="${'./file-template.html#'+ item.imdbID}">
                         <img class='py-1' src='${item.Poster}'>
                         <h5 class="text-white title">${item.Title.toUpperCase()}</h5>
                         <small class="text-warning">${item.Year+" "+item.Type.toUpperCase()}</small>
