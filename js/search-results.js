@@ -17,8 +17,10 @@ window.addEventListener('load', (event) => {
 
 
 function getMedia(searchText){
+  let loader= document.getElementById('loader');
   let itemList= document.getElementById('item-list');
   let resultHead= document.getElementById('result-head');
+  loader.classList.remove("d-none"); //to show loader
   axios.get('https://www.omdbapi.com/?apikey=45ad3714&s='+searchText) //to get results from OMDB API
     .then( (response)=>{
       let media= response.data.Search;
@@ -32,10 +34,12 @@ function getMedia(searchText){
                       </a>
                     </div>`;
       });
+      loader.classList.add("d-none"); //to hide loader
       resultHead.innerHTML=`Showing results for: ${decodeURI(searchText)}`; //to remove %20 (if any)
       itemList.innerHTML=output;
     })
     .catch( (err)=>{
+      loader.classList.add("d-none"); //to hide loader
       resultHead.innerHTML=`0 results found for: ${decodeURI(searchText)}`; //to remove %20 (if any)
       itemList.innerHTML="";
       console.log(err);
