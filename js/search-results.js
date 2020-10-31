@@ -19,7 +19,7 @@ window.addEventListener('load', (event) => {
 function getMedia(searchText){
   let itemList= document.getElementById('item-list');
   let resultHead= document.getElementById('result-head');
-  axios.get('http://www.omdbapi.com/?apikey=45ad3714&s='+searchText) //to get results from OMDB API
+  axios.get('https://www.omdbapi.com/?apikey=45ad3714&s='+searchText) //to get results from OMDB API
     .then( (response)=>{
       let media= response.data.Search;
       let output="";
