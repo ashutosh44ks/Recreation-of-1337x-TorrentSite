@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style-menu-template.css"/>
+    <link rel="stylesheet" href="css/style-search-results.css"/>
     <link rel="icon" href="media/favicon.ico">
     <title> 1337x Torrents | Menu </title>
   </head>
@@ -78,44 +78,9 @@
               <div class="container main mt-4">
                 <div class="row py-2">
                   <div class="col-md-10 col-sm-12 mb-3">
-                    <div class="row bg-gains mb-4 rounded">
-                      <ul>
-                        <li class="popular">
-                          <a href="menu-template.html" class="bg-theme"><i class="fas fa-file-export text-white mr-2"></i>Popular Today</a>
-                        </li>
-                        <li class="popular">
-                          <a href="menu-template.html" class="bg-theme"><i class="fas fa-file-export text-white mr-2"></i>Popular This Week</a>
-                        </li>
-                        <li class="popular">
-                          <a href="menu-template.html" class="bg-theme"><i class="fas mr-2 text-white fa-chart-line"></i>Trending Today</a>
-                        </li>
-                        <li class="popular">
-                          <a href="menu-template.html" class="bg-theme"><i class="fas mr-2 text-white fa-chart-line"></i>Trending This Week</a>
-                        </li>
-                        <li class="popular">
-                          <a href="menu-template.html" class="bg-theme"><i class="fas mr-2 text-white fa-clipboard-check"></i>Top 100 This Month</a>
-                        </li>
-                      </ul>
-
+                    <div class="row bg-gains mb-4 p-2 rounded strong text-theme" id="result-head">
                     </div>
-                    <div class="row bg-gains rounded">
-                      <div class="alert alert-dark py-2" role="alert">
-                        <i class="fas fa-file-export text-white mr-3 fa-2x"></i> <span class="strong">Download Most Popular Torrents</span>
-                      </div>
-                      <table class="table table-sm table-striped mb-0">
-                        <thead class="bg-dark text-white">
-                          <tr>
-                            <th scope="col" class="px-2">name</th>
-                            <th scope="col" class="px-2 text-center">se</th>
-                            <th scope="col" class="px-2 text-center thidden">le</th>
-                            <th scope="col" class="px-2 text-center thidden">time</th>
-                            <th scope="col" class="px-2 text-center">size</th>
-                            <th scope="col" class="px-2 text-center thidden">uploader</th>
-                          </tr>
-                        </thead>
-                        <tbody id="Tbody">
-                        </tbody>
-                      </table>
+                    <div class="row" id="item-list">
                     </div>
                   </div>
                   <div class="col-md-2 col-sm-12">
@@ -126,20 +91,20 @@
                         </div>
                         <div class="card-body p-0">
                           <ul class="list-group list-group-flush rounded">
-                            <li class="list-group-item"><a href="menu-template.html"><i class="fas mr-3 text-success fa-chart-line"></i>Trending Torrents</a></li>
+                            <li class="list-group-item"><a href="#"><i class="fas mr-3 text-success fa-chart-line"></i>Trending Torrents</a></li>
                             <li class="list-group-item"><a href="#"><i class="fas mr-3 text-success fa-file-video"></i>Movie Library</a></li>
                             <li class="list-group-item"><a href="#"><i class="fas mr-3 text-success fa-video"></i>TV Library</a></li>
                             <li class="list-group-item"><a href="#"><i class="fas mr-3 text-theme fa-laptop"></i>New TV Episodes</a></li>
-                            <li class="list-group-item"><a href="menu-template.html"><i class="fas mr-3 text-theme fa-clipboard-check"></i>Top 100 Torrents</a></li>
-                            <li class="list-group-item"><a href="menu-template.html"><i class="fas mr-3 text-theme fa-laugh-beam"></i>Anime</a></li>
-                            <li class="list-group-item"><a href="menu-template.html"><i class="fas mr-3 text-theme fa-file-archive"></i>Applications</a>
-                            <li class="list-group-item"><a href="menu-template.html"><i class="fas mr-3 text-theme fa-video"></i>Documentaries</a></li>
-                            <li class="list-group-item"><a href="menu-template.html"><i class="fas mr-3 text-theme fa-gamepad"></i>Games</a></li>
-                            <li class="list-group-item"><a href="menu-template.html"><i class="fas mr-3 text-theme fa-film"></i>Movies</a></li>
-                            <li class="list-group-item"><a href="menu-template.html"><i class="fas mr-3 text-theme fa-music"></i>Music</a></li>
-                            <li class="list-group-item"><a href="menu-template.html"><i class="fas mr-3 text-theme fa-file-alt"></i>Other</a></li>
-                            <li class="list-group-item"><a href="menu-template.html"><i class="fas mr-3 text-theme fa-tv"></i>Television</a></li>
-                            <li class="list-group-item "><a href="menu-template.html"><i class="fas mr-3 text-theme fa-user-alt"></i>XXX</a></li>
+                            <li class="list-group-item"><a href="#"><i class="fas mr-3 text-theme fa-clipboard-check"></i>Top 100 Torrents</a></li>
+                            <li class="list-group-item"><a href="#"><i class="fas mr-3 text-theme fa-laugh-beam"></i>Anime</a></li>
+                            <li class="list-group-item"><a href="#"><i class="fas mr-3 text-theme fa-file-archive"></i>Applications</a>
+                            <li class="list-group-item"><a href="#"><i class="fas mr-3 text-theme fa-video"></i>Documentaries</a></li>
+                            <li class="list-group-item"><a href="#"><i class="fas mr-3 text-theme fa-gamepad"></i>Games</a></li>
+                            <li class="list-group-item"><a href="#"><i class="fas mr-3 text-theme fa-film"></i>Movies</a></li>
+                            <li class="list-group-item"><a href="#"><i class="fas mr-3 text-theme fa-music"></i>Music</a></li>
+                            <li class="list-group-item"><a href="#"><i class="fas mr-3 text-theme fa-file-alt"></i>Other</a></li>
+                            <li class="list-group-item"><a href="#"><i class="fas mr-3 text-theme fa-tv"></i>Television</a></li>
+                            <li class="list-group-item "><a href="#"><i class="fas mr-3 text-theme fa-user-alt"></i>XXX</a></li>
                           </ul>
                         </div>
                       </div>
@@ -200,7 +165,7 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="js/menu-template.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/search-results.js"></script>
   </body>
 </html>
