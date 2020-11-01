@@ -7,6 +7,19 @@
   .main{
     margin-top: 4% !important;
   }
+  .to-hide{
+    display: none;
+  }
+  .page-top{
+    position: fixed !important;
+    text-align: right!important;
+    bottom: 15px !important;
+    right: 25px;
+  }
+  footer{
+    background-color: transparent;
+    border-top: 1px solid transparent;
+  }
 }
 @media only screen and (max-width:900px) {
   #item-list > div{

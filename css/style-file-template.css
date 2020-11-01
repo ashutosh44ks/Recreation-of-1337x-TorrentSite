@@ -7,6 +7,19 @@
   .main{
     margin-top: 4% !important;
   }
+  .to-hide{
+    display: none;
+  }
+  .page-top{
+    position: fixed !important;
+    text-align: right!important;
+    bottom: 15px !important;
+    right: 25px;
+  }
+  footer{
+    background-color: transparent;
+    border-top: 1px solid transparent;
+  }
 }
 
 
@@ -70,7 +83,7 @@ header > nav > div > div > ul > li > .nav-link.active{
 .bg-image{
   position: relative;
   width: 100%;
-  height: 1450px;
+  height: 1500px;
   overflow: auto;
   background-image: url('../media/bg-image.jpg');
 }
@@ -79,7 +92,7 @@ header > nav > div > div > ul > li > .nav-link.active{
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 1450px;
+  height: 1500px;
   background-image: url('../media/bg-image2.png');
   background-position: center;
   background-position: top;
