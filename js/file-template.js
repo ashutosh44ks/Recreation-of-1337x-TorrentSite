@@ -4,10 +4,19 @@ window.addEventListener('load', (event) => {
   getMedia(searchPassID);
 });
 
-function getMedia(searchID){
+async function getUserName(){
+  const res = await fetch('https://randomuser.me/api');
+  const {results} = await res.json();
+  const temp =  results[0].login.username;
+  return temp;
+}
+
+async function getMedia(searchID){
   let loader= document.getElementById('loader');
   let resultHead= document.getElementById('result-head');
   loader.classList.remove("d-none"); //to show loader
+
+  const res = await getUserName();
   axios.get('https://www.omdbapi.com/?apikey=45ad3714&i='+searchID) //to get results from OMDB API
     .then( (response)=>{
       let media= response.data;
@@ -24,7 +33,7 @@ function getMedia(searchID){
                         <li class="border-bottom border-secondary">Type <span class="float-right text-white-50"> ${media.Rated} </span></li>
                         <li class="border-bottom border-secondary">Language <span class="float-right text-white-50"> ${media.Language}</span></li>
                         <li class="border-bottom border-secondary">Total size <span class="float-right text-white-50"> ${Math.floor(13*Math.random()+1)+"GB"}</span></li>
-                        <li class="border-bottom border-secondary">Uploaded by <span class="float-right text-white-50"> Adam</span></li>
+                        <li class="border-bottom border-secondary">Uploaded by <span class="float-right text-white-50"> ${res}</span></li>
                       </ul>
                     </div>
                     <div class="col-md-4 col-sm-12">
